@@ -59,12 +59,12 @@ void filetime2(void)
 //두 개의 파일 크기를 비교하는 함수 작성
 void sizecmp(void)
 {
-if((int)stat1.st_size>(int)stat2.st_size)
-	printf("text1 bigger than text2\n");
-else if((int)stat1.st_size<(int)stat2.st_size)
-	printf("text2 bigger than text1\n");
-else
-	printf("size is same\n");
+	if((int)stat1.st_size>(int)stat2.st_size)
+		printf("text1 bigger than text2\n");
+	else if((int)stat1.st_size<(int)stat2.st_size)
+		printf("text2 bigger than text1\n");
+	else
+		printf("size is same\n");
 }
 
 //두 개의 파일 블락 수를 비교하는 함수 작성
